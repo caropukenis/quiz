@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+body {
+  background-color: #b6a9bf;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+  --hue: var(--hue-neutral);
+}
+
+.container {
+  background-color: #cabfd4;
+  max-width: 80%;
+  border-radius: 5px;
+  padding: 10px;
+  width: 800px;
+}
+
+.btn {
+  background-color: #aad0d4;
+  font-size: 1.5rem;
+  font-weight: strong;
+  padding: 10px 20px;
+}
+
+.btnGrid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+.btn:hover {
+  background-color: teal;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.hide {
+  display: none;
+}

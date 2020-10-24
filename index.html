@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script defer src="assets/script.js"></script>
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Javascript Quiz!</h1>
+      <p id="timeDisplay">Seconds left: <span id="time-left">60</span></p>
+      <div id="qContainer" class="hide">
+        <div id="question">Question</div>
+        <div id="answerBtn" class="btnGrid">
+          <button class="btn" id="a">Answer 1</button>
+          <button class="btn" id="b">Answer 2</button>
+          <button class="btn" id="c">Answer 3</button>
+          <button class="btn" id="d">Answer 4</button>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="startBtn" class="btn">Start</button>
+      </div>
+      <div class="highscoreContainer hide" id="highscoreBoard">
+        <div class="scoreReadout" id="readOut">
+          <p>Score:<span id="scoreRead">0</span></p>
+        </div>
+        <div class="initals" id="enterInitals">
+          <input
+            type="text"
+            placeholder="Enter initials here"
+            id="initalsEntered"
+          />
+          <button class="btn" id="submit">Submit</button>
+        </div>
+        <div class="leaders hide" id="leaderBoard">
+          <ul>
+            <li class="leaderScores">
+              First Place:<span id="first">First!</span>
+            </li>
+          </ul>
+        </div>
+        <div class="restartGame">
+          <button class="btn" id="restartBtn">Restart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
